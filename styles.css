@@ -8,7 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #2c3e50;
+    background-color: #ffffff;
 }
 
 /* Navigation */
@@ -29,18 +30,18 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #2196F3;
     margin-left: 2rem;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    color: #FFD700;
 }
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?finance');
+    background: url('https://source.unsplash.com/1600x900/?financial+success');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -49,11 +50,44 @@ nav {
     justify-content: center;
     text-align: center;
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 3rem 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    color: #2196F3;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Sections */
@@ -76,6 +110,58 @@ h2 {
     text-align: center;
 }
 
+/* Founders Section */
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.founder-card {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.founder-card h3 {
+    color: #2196F3;
+    margin-bottom: 0.5rem;
+}
+
+.founder-card p {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.founder-bio {
+    margin-top: 1.5rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
 /* Services Section */
 .services-grid {
     display: grid;
@@ -87,9 +173,10 @@ h2 {
 .service-card {
     text-align: center;
     padding: 2rem;
-    background: #f9f9f9;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border: 1px solid #2196F3;
     transition: transform 0.3s ease;
 }
 
@@ -99,7 +186,7 @@ h2 {
 
 .service-card i {
     font-size: 2.5rem;
-    color: #3498db;
+    color: #2196F3;
     margin-bottom: 1rem;
 }
 
@@ -118,7 +205,7 @@ h2 {
 
 .contact-item i {
     font-size: 2rem;
-    color: #3498db;
+    color: #2196F3;
     margin-bottom: 0.5rem;
 }
 
@@ -126,8 +213,8 @@ h2 {
 footer {
     text-align: center;
     padding: 2rem;
-    background: #2c3e50;
-    color: white;
+    background: #2196F3;
+    color: #ffffff;
 }
 
 /* Responsive Design */
