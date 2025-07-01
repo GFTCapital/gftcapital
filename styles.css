@@ -30,7 +30,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #2196F3;
+    color: #B8860B;
     margin-left: 2rem;
     transition: color 0.3s ease;
 }
@@ -70,7 +70,7 @@ nav {
 .hero-content h1 {
     font-size: 4.5rem;
     margin-bottom: 1.5rem;
-    color: #2196F3;
+    color: #B8860B;
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: -1px;
@@ -143,7 +143,7 @@ h2 {
 }
 
 .founder-card h3 {
-    color: #2196F3;
+    color: #B8860B;
     margin-bottom: 0.5rem;
 }
 
@@ -172,7 +172,7 @@ h2 {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    border: 1px solid #2196F3;
+    border: 1px solid #B8860B;
     transition: transform 0.3s ease;
 }
 
@@ -182,7 +182,7 @@ h2 {
 
 .service-card i {
     font-size: 2.5rem;
-    color: #2196F3;
+    color: #B8860B;
     margin-bottom: 1rem;
 }
 
@@ -201,7 +201,7 @@ h2 {
 
 .contact-item i {
     font-size: 2rem;
-    color: #2196F3;
+    color: #B8860B;
     margin-bottom: 0.5rem;
 }
 
@@ -209,7 +209,7 @@ h2 {
 footer {
     text-align: center;
     padding: 2rem;
-    background: rgba(33, 150, 243, 0.1);
+    background: rgba(184, 134, 11, 0.1);
     color: #2c3e50;
     border-top: 1px solid #e0e0e0;
 }
